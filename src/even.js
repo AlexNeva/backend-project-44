@@ -1,10 +1,13 @@
 import readlineSync from 'readline-sync';
-import hello from './cli.js';
+
 import getRandomInt from './getRandomInt.js';
 import isEven from './isEven.js';
 
 const even = () => {
-  const name = hello();
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let correctAnswersLeft = 3;
 
