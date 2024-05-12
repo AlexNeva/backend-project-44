@@ -5,8 +5,8 @@ import getRandomInt from '../getRandomInt.js';
 const purpose = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const getExspression = () => {
-  const firstNum = getRandomInt();
-  const secondNum = getRandomInt();
+  const firstNum = getRandomInt(1, 100);
+  const secondNum = getRandomInt(1, 100);
   const operation = getRandomElement(operations);
 
   const expression = `${firstNum} ${operation} ${secondNum}`;

@@ -3,8 +3,8 @@ import app from '../index.js';
 
 const purpose = 'Find the greatest common divisor of given numbers.';
 const getQuestion = () => {
-  const firstNum = getRandomInt();
-  const secondNum = getRandomInt();
+  const firstNum = getRandomInt(1, 100);
+  const secondNum = getRandomInt(1, 100);
 
   return `${firstNum} ${secondNum}`;
 };
