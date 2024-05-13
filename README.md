@@ -15,3 +15,5 @@ brain-calc: https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1
 brain-gcd: https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr
 
 brain-progression: https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d
+
+brain-prime: https://asciinema.org/a/4mWVuAAxnsXH7rimNiFgBcc6e
