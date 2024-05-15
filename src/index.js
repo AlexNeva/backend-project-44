@@ -1,10 +1,8 @@
 import readlineSync from 'readline-sync';
 
-const askQuestion = (question) => readlineSync.question(question);
-
 const app = (purpose, getQuestion, getResult) => {
   console.log('Welcome to the Brain Games!');
-  const name = askQuestion('May I have your name? ');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
   console.log(purpose);
@@ -14,7 +12,7 @@ const app = (purpose, getQuestion, getResult) => {
   while (correctAnswersLeft > 0) {
     const question = getQuestion();
     console.log(`Question: ${question}`);
-    const answer = askQuestion('Your answer: ');
+    const answer = readlineSync.question('Your answer: ');
     const result = getResult(question);
 
     if (answer !== result) {
