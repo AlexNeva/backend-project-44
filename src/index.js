@@ -9,7 +9,7 @@ const app = (purpose, getQuestion, getResult) => {
 
   let correctAnswersLeft = 3;
 
-  while (correctAnswersLeft > 0) {
+  for (let i = correctAnswersLeft; i > 0; i -= 1) {
     const question = getQuestion();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
@@ -22,7 +22,6 @@ const app = (purpose, getQuestion, getResult) => {
     }
 
     console.log('Correct!');
-    correctAnswersLeft -= 1;
   }
 
   console.log(`Congratulations, ${name}!`);
