@@ -21,16 +21,16 @@ const generateRound = () => {
 
   switch (operation) {
     case '+':
-      result = (+firstNum + +secondNum).toString();
+      result = `${+firstNum + +secondNum}`;
       break;
     case '-':
-      result = (+firstNum - +secondNum).toString();
+      result = `${+firstNum - +secondNum}`;
       break;
     case '*':
-      result = (+firstNum * +secondNum).toString();
+      result = `${+firstNum * +secondNum}`;
       break;
     default:
-      result = (+firstNum + +secondNum).toString();
+      result = `${+firstNum + +secondNum}`;
   }
 
   return [question, result];
