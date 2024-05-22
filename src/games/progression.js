@@ -12,20 +12,21 @@ const getProgression = (length = 10, step = 2, startNum = 1) => {
 
   return progression;
 };
+const getQuestion = (progression) => {
+  const progressionLength = 10;
+
+  const randomIndex = getRandomInt(1, progressionLength);
+  progression.splice(randomIndex, 1, '..');
+  return progression.join(' ');
+};
 
 const purpose = 'What number is missing in the progression?';
 
-const getQuestion = () => {
-  const progressionLength = 10;
-  const progression = getProgression(progressionLength, getRandomInt(2, 5), getRandomInt(1, 10));
-  const randomIndex = getRandomInt(1, progressionLength);
-  progression.splice(randomIndex, 1, '..');
-  return progression.join(',');
-};
-
 const generateRound = () => {
   let result;
-  const progression = getQuestion().split(',');
+  const progression = getProgression(10, getRandomInt(2, 5), getRandomInt(1, 10));
+  const question = getQuestion(progression);
+
   const emptyNumIndex = progression.indexOf('..');
 
   const prevNum = progression[emptyNumIndex - 1];
@@ -38,7 +39,7 @@ const generateRound = () => {
     result = `${+prevNum + step}`;
   }
 
-  return [progression, result];
+  return [question, result];
 };
 
 export default () => app(purpose, generateRound);
