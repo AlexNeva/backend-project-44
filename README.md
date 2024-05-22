@@ -6,12 +6,12 @@
 
 ### Demos:
 
-brain-even: https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG
+brain-even: [![asciicast](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG.svg)](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG)
 
-brain-calc: https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1
+brain-calc: [![asciicast](https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1.svg)](https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1)
 
-brain-gcd: https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr
+brain-gcd: [![asciicast](https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr.svg)](https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr)
 
-brain-progression: https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d
+brain-progression: [![asciicast](https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d.svg)](https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d)
 
-brain-prime: https://asciinema.org/a/4mWVuAAxnsXH7rimNiFgBcc6e
+brain-prime: [![asciicast](https://asciinema.org/a/4mWVuAAxnsXH7rimNiFgBcc6e.svg)](https://asciinema.org/a/4mWVuAAxnsXH7rimNiFgBcc6e)
