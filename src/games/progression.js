@@ -20,12 +20,12 @@ const getQuestion = () => {
   const progression = getProgression(progressionLength, getRandomInt(2, 5), getRandomInt(1, 10));
   const randomIndex = getRandomInt(1, progressionLength);
   progression.splice(randomIndex, 1, '..');
-  return progression.join(' ');
+  return progression.join(',');
 };
 
 const generateRound = () => {
   let result;
-  const progression = getQuestion().split(' ');
+  const progression = getQuestion().split(',');
   const emptyNumIndex = progression.indexOf('..');
 
   const prevNum = progression[emptyNumIndex - 1];
