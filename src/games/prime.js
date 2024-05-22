@@ -1,10 +1,7 @@
 import app from '../index.js';
 import getRandomInt from '../getRandomInt.js';
-import isPrime from '../isPrime.js';
 
 const purpose = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-const getNum = () => getRandomInt(1, 100);
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -20,6 +17,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const getResult = (num) => (isPrime(num) ? 'yes' : 'no');
+const generateRound = () => {
+  const question = getRandomInt(1, 100);
+  const result = isPrime(question) ? 'yes' : 'no';
 
-export default () => app(purpose, getNum, getResult);
+  return [question, result];
+};
+
+export default () => app(purpose, generateRound);
