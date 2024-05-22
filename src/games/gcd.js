@@ -2,19 +2,17 @@ import getRandomInt from '../getRandomInt.js';
 import app from '../index.js';
 
 const purpose = 'Find the greatest common divisor of given numbers.';
-const getQuestion = () => {
-  const firstNum = getRandomInt(1, 100);
-  const secondNum = getRandomInt(1, 100);
-
-  return `${firstNum} ${secondNum}`;
-};
 
 const gcd = (a, b) => (b ? gcd(b, a % b) : a);
 
-const getResult = (question) => {
-  const [firstNum, secondNum] = question.split(' ');
+const generateRound = () => {
+  const firstNum = getRandomInt(1, 100);
+  const secondNum = getRandomInt(1, 100);
+  const question = `${firstNum} ${secondNum}`;
 
-  return `${gcd(firstNum, secondNum)}`;
+  const result = gcd(firstNum, secondNum).toString();
+
+  return [question, result];
 };
 
-export default () => app(purpose, getQuestion, getResult);
+export default () => app(purpose, generateRound);
