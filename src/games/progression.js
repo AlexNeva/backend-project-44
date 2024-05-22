@@ -1,4 +1,3 @@
-import getProgression from '../getProgression.js';
 import getRandomInt from '../getRandomInt.js';
 import app from '../index.js';
 
