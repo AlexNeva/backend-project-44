@@ -23,20 +23,22 @@ const getQuestion = () => {
   return progression.join(' ');
 };
 
-const getResult = (question) => {
-  const progression = question.split(' ');
+const generateRound = () => {
+  let result;
+  const progression = getQuestion().split(' ');
   const emptyNumIndex = progression.indexOf('..');
 
   const prevNum = progression[emptyNumIndex - 1];
   const nextNum = progression[emptyNumIndex + 1];
 
   if (nextNum) {
-    const result = (+prevNum + +nextNum) / 2;
-    return `${result}`;
+    result = `${(+prevNum + +nextNum) / 2}`;
+  } else {
+    const step = +prevNum - +progression[emptyNumIndex - 2];
+    result = `${+prevNum + step}`;
   }
 
-  const step = +prevNum - +progression[emptyNumIndex - 2];
-  return `${+prevNum + step}`;
+  return [progression, result];
 };
 
-export default () => app(purpose, getQuestion, getResult);
+export default () => app(purpose, generateRound);
