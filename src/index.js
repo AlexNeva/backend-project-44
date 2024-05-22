@@ -6,7 +6,7 @@ const app = (purpose, generateRound) => {
   console.log(`Hello, ${name}!`);
   console.log(purpose);
 
-  let correctAnswersLeft = 3;
+  const correctAnswersLeft = 3;
 
   for (let i = correctAnswersLeft; i > 0; i -= 1) {
     const [question, result] = generateRound();
