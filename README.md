@@ -8,9 +8,55 @@
 
 Welcome to our gaming app, a collection of fun and educational games designed to challenge your mind and sharpen your cognitive skills. Our app features a variety of games that are both entertaining and intellectually stimulating, perfect for players of all ages who enjoy testing their mental agility.
 
+## Getting Started
+
+Follow these steps to set up and link the project from GitHub.
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- Node.js (version 14.x or higher)
+- npm (Node Package Manager)
+
+### Installation
+
+1. **Clone the Repository**
+
+Open your terminal and clone the repository from GitHub:
+
+```sh
+   git clone https://github.com/AlexNeva/backend-project-44.git
+```
+
+2. **Navigate to the Project Directory**
+
+Change your directory to the project folder:
+
+```sh
+   cd backend-project-44
+```
+
+3. **Install Dependencies**
+
+Install the required dependencies using npm:
+
+```sh
+   make install
+```
+
+4. **Linking the Project**
+
+Run the following command to create a global link:
+
+```sh
+   npm link
+```
+
+
 ## Game Descriptions
 
-### 1. Brain-Even ###
+### 1. Brain-Even
 
 **Objective:** Identify the even numbers.
 
@@ -18,7 +64,7 @@ Welcome to our gaming app, a collection of fun and educational games designed to
 
 [![asciicast](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG.svg)](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG)
 
-### 2. Brain-Calc ###
+### 2. Brain-Calc
 
 **Objective:** Calculate the result of given mathematical expressions.
 
@@ -26,7 +72,7 @@ Welcome to our gaming app, a collection of fun and educational games designed to
 
 [![asciicast](https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1.svg)](https://asciinema.org/a/8ZbULMdy5EHUhSIPO43z1SBu1)
 
-### 3. Brain-GCD ###
+### 3. Brain-GCD
 
 **Objective:** Find the Greatest Common Divisor (GCD) of two numbers.
 
@@ -34,7 +80,7 @@ Welcome to our gaming app, a collection of fun and educational games designed to
 
 [![asciicast](https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr.svg)](https://asciinema.org/a/vK2ufdfeHlyKXbEDci39IskDr)
 
-### 4. Brain-Progression ###
+### 4. Brain-Progression
 
 **Objective:** Identify the missing number in a numerical progression.
 
@@ -42,7 +88,7 @@ Welcome to our gaming app, a collection of fun and educational games designed to
 
 [![asciicast](https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d.svg)](https://asciinema.org/a/qbxG3HzmfrSC4fCsF3q8oUb8d)
 
-### 5. Brain-Prime ###
+### 5. Brain-Prime
 
 **Objective:** Determine if a number is prime.
 
