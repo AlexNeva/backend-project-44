@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed on your machine:
 Open your terminal and clone the repository from GitHub:
 
 ```sh
-   git clone https://github.com/AlexNeva/backend-project-44.git
+git clone https://github.com/AlexNeva/backend-project-44.git
 ```
 
 2. **Navigate to the Project Directory**
@@ -34,7 +34,7 @@ Open your terminal and clone the repository from GitHub:
 Change your directory to the project folder:
 
 ```sh
-   cd backend-project-44
+cd backend-project-44
 ```
 
 3. **Install Dependencies**
@@ -42,7 +42,7 @@ Change your directory to the project folder:
 Install the required dependencies using npm:
 
 ```sh
-   make install
+make install
 ```
 
 4. **Linking the Project**
@@ -50,7 +50,7 @@ Install the required dependencies using npm:
 Run the following command to create a global link:
 
 ```sh
-   npm link
+npm link
 ```
 
 
