@@ -4,6 +4,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/867a3fcdf855fa29ea13/maintainability)](https://codeclimate.com/github/AlexNeva/backend-project-44/maintainability)
 
+### About The Project
+
 ### Demos:
 
 brain-even: [![asciicast](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG.svg)](https://asciinema.org/a/6653M6ILTH9fHVzhJP8vv4iPG)
