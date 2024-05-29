@@ -2,16 +2,17 @@ import getRandomInt from '../getRandomInt.js';
 import app from '../index.js';
 
 const getProgression = (length = 10, step = 2, startNum = 1) => {
-  const progression = [startNum];
+  const progression = [];
 
-  for (let i = 1; i < length; i += 1) {
-    const newNum = progression[i - 1] + step;
+  for (let i = 0; i < length; i += 1) {
+    const current = startNum + step * i;
 
-    progression.push(newNum);
+    progression.push(current);
   }
 
   return progression;
 };
+
 const getQuestion = (progression) => {
   const progressionLength = 10;
 
@@ -41,5 +42,7 @@ const generateRound = () => {
 
   return [question, result];
 };
+
+console.log(getProgression());
 
 export default () => app(purpose, generateRound);
