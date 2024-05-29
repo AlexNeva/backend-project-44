@@ -24,7 +24,7 @@ const generateRound = () => {
   const operation = getRandomElement(operations);
 
   const question = `${firstNum} ${operation} ${secondNum}`;
-  const result = calculate(firstNum, secondNum, operation);
+  const result = `${calculate(firstNum, secondNum, operation)}`;
 
   return [question, result];
 };
