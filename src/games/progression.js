@@ -1,6 +1,8 @@
 import getRandomInt from '../getRandomInt.js';
 import app from '../index.js';
 
+const progressionLength = 10;
+
 const getProgression = (length = 10, step = 2, startNum = 1) => {
   const progression = [];
 
@@ -14,8 +16,6 @@ const getProgression = (length = 10, step = 2, startNum = 1) => {
 };
 
 const getQuestion = (progression) => {
-  const progressionLength = 10;
-
   const randomIndex = getRandomInt(1, progressionLength);
   progression.splice(randomIndex, 1, '..');
   return progression.join(' ');
@@ -25,7 +25,7 @@ const purpose = 'What number is missing in the progression?';
 
 const generateRound = () => {
   let result;
-  const progression = getProgression(10, getRandomInt(2, 5), getRandomInt(1, 10));
+  const progression = getProgression(progressionLength, getRandomInt(2, 5), getRandomInt(1, 10));
   const question = getQuestion(progression);
 
   const emptyNumIndex = progression.indexOf('..');
@@ -42,7 +42,5 @@ const generateRound = () => {
 
   return [question, result];
 };
-
-console.log(getProgression());
 
 export default () => app(purpose, generateRound);
