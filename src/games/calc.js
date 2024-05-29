@@ -5,33 +5,26 @@ import getRandomInt from '../getRandomInt.js';
 const purpose = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 
-const calculate = () => {
+const calculate = (firstNum, secondNum, operation) => {
+  switch (operation) {
+    case '+':
+      return +firstNum + +secondNum;
+    case '-':
+      return +firstNum - +secondNum;
+    case '*':
+      return +firstNum * +secondNum;
+    default:
+      return +firstNum + +secondNum;
+  }
+};
+
+const generateRound = () => {
   const firstNum = getRandomInt(1, 10);
   const secondNum = getRandomInt(1, 10);
   const operation = getRandomElement(operations);
 
-  const expression = `${firstNum} ${operation} ${secondNum}`;
-
-  return expression;
-};
-const generateRound = () => {
-  let result;
-  const question = calculate();
-  const [firstNum, operation, secondNum] = question.split(' ');
-
-  switch (operation) {
-    case '+':
-      result = `${+firstNum + +secondNum}`;
-      break;
-    case '-':
-      result = `${+firstNum - +secondNum}`;
-      break;
-    case '*':
-      result = `${+firstNum * +secondNum}`;
-      break;
-    default:
-      result = `${+firstNum + +secondNum}`;
-  }
+  const question = `${firstNum} ${operation} ${secondNum}`;
+  const result = calculate(firstNum, secondNum, operation);
 
   return [question, result];
 };
