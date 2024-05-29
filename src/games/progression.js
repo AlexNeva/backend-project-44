@@ -16,7 +16,7 @@ const getProgression = (length = 10, step = 2, startNum = 1) => {
 };
 
 const getQuestion = (progression) => {
-  const randomIndex = getRandomInt(1, progressionLength);
+  const randomIndex = getRandomInt(0, progressionLength - 1);
   progression.splice(randomIndex, 1, '..');
   return progression.join(' ');
 };
