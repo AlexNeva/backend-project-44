@@ -1,12 +1,12 @@
 import readlineSync from 'readline-sync';
 
+const correctAnswersLeft = 3;
+
 const app = (purpose, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(purpose);
-
-  const correctAnswersLeft = 3;
 
   for (let i = correctAnswersLeft; i > 0; i -= 1) {
     const [question, result] = generateRound();
